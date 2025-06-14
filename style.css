@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);  
+
+  /* Typography Presets */
+  --text-preset-1-size: 1.5rem; /* 24px */
+  --text-preset-1-line-height: 1.5; /* 150% */
+  --text-preset-1-letter-spacing: 0px;
+  --text-preset-1-font-weight: 700; /* Inter Bold */
+
+  --text-preset-2-size: 0.875rem; /* 14px */
+  --text-preset-2-line-height: 1.5; /* 150% */
+  --text-preset-2-letter-spacing: 0px;
+  --text-preset-2-font-weight: 400; /* Inter Regular */
+
+  --text-preset-2-bold-font-weight: 700; /* Inter Bold */
+}
+
+
+.text-preset-1 {
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+  font-weight: var(--text-preset-1-font-weight);
+}
+
+.text-preset-2 {
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  font-weight: var(--text-preset-2-font-weight);
+}
+
+.text-preset-2-bold {
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  font-weight: var(--text-preset-2-bold-font-weight);
+}
+
+
+html, body { 
+    height: 100%;
+    font-family: 'Inter';
+    background-color: var(--grey-900);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.card { 
+    background-color: var(--grey-800);
+    border-radius: 0.5em;
+    padding: 2em;
+    margin: auto;
+    width: 22em;
+    height: 36em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card .profile-image {
+    border-radius: 50%;
+    width:  5.5em; 
+    height: 5.5em; 
+}
+
+.card .profile .name {
+   margin-bottom: 0.5em; 
+}
+
+.card .profile .location { 
+  margin-top: 0;
+  color: var(--green);
+}
+
+.role { 
+    padding: 1em 0
+}
+
+ul.link { 
+    padding: 0;
+    margin: 0em;
+
+}
+
+.card ul.link li.link-item {
+    margin: 1em 0em;
+    height: 3.5em;    
+    font-weight: 600;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: var(--grey-700);
+    list-style: none;
+}
+
+.card ul.link li:hover { 
+  cursor: pointer;
+  background-color: var(--green);
+  color: black;
+}
